@@ -1,11 +1,3 @@
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 <?php
 // Include Header
 include("template/header.php");
@@ -31,7 +23,3 @@ include("template/header.php");
 include("template/footer.php");
 
  ?>
-  </body>
-</html>
-
-<?php
