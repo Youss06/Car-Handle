@@ -16,4 +16,18 @@ class CarManager {
     $q->bindValue(':years', $recovery->getYears(), PDO::PARAM_STR);
 
     $q->execute();
+
+
+    public function get($id){
+    // Exécute une requête de type SELECT avec une clause WHERE, et retourne un objet Personnage.
+
+   $q = $this->getBdd()->prepare('SELECT * FROM vehicule WHERE id = :id');
+   $q->execute(array(
+     "id" => $id,
+   ));
+   $donnees = $q->fetch(PDO::FETCH_ASSOC);
+
+   return new vehicule($donnees);
+  }
+
 }
