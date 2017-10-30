@@ -11,6 +11,6 @@ class CarManager {
   }
 
   public function add(chat $c ){
-    $q = $this->getBdd()->prepare('INSERT INTO vehicule(type, mark, color, years)
-    VALUES(:type, :mark, :color, :years)');
+    $q = $this->getBdd()->prepare('INSERT INTO vehicule(model, mark, color, years)
+    VALUES(:model, :mark, :color, :years)');
 }
