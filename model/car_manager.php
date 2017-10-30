@@ -30,6 +30,12 @@ class CarManager {
    return $donnees;
   }
 
+  public function recoveryCars($id){
+      $q = $this->getBdd()->prepare ('SELECT * FROM vehicule WHERE id = :id');
 
+      $q->execute(array('id' => $id));
+      $data = $q->fetch();
+      return $data;
+}
 
 }

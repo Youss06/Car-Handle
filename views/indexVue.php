@@ -13,7 +13,7 @@ include("template/header.php");
         <p class="card-text"><?php echo $car->getMark(); ?></p>
         <p class="card-text"><?php echo $car->getColor(); ?></p>
         <p class="card-text"><?php echo $car->getYears(); ?></p>
-        <a href="" class="btn btn-primary">Détails</a>
+        <a href="../controllers/detail.php?id=<?php echo $car->getId();?>" class="btn btn-primary">Détails</a>
         <a href="../views/formVue.php" class="btn btn-primary tonbou">Créer</a>
         <a href="" class="btn btn-primary tonbou">Modifier</a>
         <a href="" class="btn btn-primary tonbou">Supprimer</a>
