@@ -2,7 +2,10 @@
 
 class CarManager {
 
-
+  public function getBdd(){
+    $bd = new PDO('mysql:host=localhost;dbname=cars', 'root', 'root');
+   return $bd;
+  }
   // constructeur
 
   public function add(vehicule $recovery ){
@@ -16,18 +19,17 @@ class CarManager {
     $q->bindValue(':years', $recovery->getYears(), PDO::PARAM_STR);
 
     $q->execute();
+}
 
-
-    public function get($id){
+    public function getAllCars(){
     // Exécute une requête de type SELECT avec une clause WHERE, et retourne un objet Personnage.
 
-   $q = $this->getBdd()->prepare('SELECT * FROM vehicule WHERE id = :id');
-   $q->execute(array(
-     "id" => $id,
-   ));
-   $donnees = $q->fetch(PDO::FETCH_ASSOC);
+   $q = $this->getBdd()->query('SELECT * FROM vehicule');
+   $donnees = $q->fetchAll(PDO::FETCH_ASSOC);
 
-   return new vehicule($donnees);
+   return $donnees;
   }
+
+
 
 }

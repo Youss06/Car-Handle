@@ -1,5 +1,5 @@
 <?php
 
-class car extends Vehicle{
+class Car extends Vehicule{
 
 }

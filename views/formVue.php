@@ -3,16 +3,19 @@
 include("template/header.php");
 
 ?>
-<form class="" action="" method="post" enctype="multipart/form-data">
-      <div class="form-group">
+<form class="" action="../controllers/index.php" method="post" enctype="multipart/form-data">
+      <!-- <div class="form-group">
         <label for="exampleInputEmail1">Type de véhicule</label>
-        <input type="text" class="form-control" name="nomProjet" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Camion, Moto, Berline...">
-        <small id="emailHelp" class="form-text text-muted">Veuillez insérer la catégorie de votre véhicule.</small>
-      </div>
+        <input type="text" class="form-control" name="model" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Camion, Moto, Berline...">
+        <small id="emailHelp" class="form-text text-muted">Veuillez insérer le modèle de votre véhicule.</small>
+      </div> -->
+
+      <input type="radio" name="model" value="camion"> Camion<br>
+ <input type="radio" name="model" value="moto"> Moto<br>
 
       <div class="form-group">
         <label for="exampleInputEmail1">Couleur du véhicule</label>
-        <input type="text" class="form-control" name="nomProjet" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Bleu, Rouge, Vert...">
+        <input type="text" class="form-control" name="color" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Bleu, Rouge, Vert...">
         <small id="emailHelp" class="form-text text-muted">La couleur de votre véhicule.</small>
       </div>
 
@@ -21,14 +24,14 @@ include("template/header.php");
       <form class="" action="" method="post" enctype="multipart/form-data">
         <div class="form-group">
           <label for="exampleInputEmail1">Marque du véhicule</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" name="date" aria-describedby="emailHelp" placeholder="Inserez la marque de votre véhicule">
+          <input type="text" class="form-control" id="exampleInputEmail1" name="mark" aria-describedby="emailHelp" placeholder="Inserez la marque de votre véhicule">
           <small id="emailHelp" class="form-text text-muted">Veuillez insérer la de votre véhicule.</small>
         </div>
 
         <form class="" action="" method="post" enctype="multipart/form-data">
           <div class="form-group">
             <label for="exampleInputEmail1">Année du véhicule</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" name="date" aria-describedby="emailHelp" placeholder="Inserez la marque de votre véhicule">
+            <input type="text" class="form-control" id="exampleInputEmail1" name="years" aria-describedby="emailHelp" placeholder="Inserez la marque de votre véhicule">
             <small id="emailHelp" class="form-text text-muted">Veuillez insérer l'année de votre véhicule.</small>
           </div>
 
