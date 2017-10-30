@@ -35,6 +35,9 @@ include("template/header.php");
 
 
       <button type="submit" name="send" class="btn btn-primary">Envoyer</button>
+      <a href="" class="btn btn-primary tonbou">Créer</a>
+      <a href="" class="btn btn-primary tonbou">Modifier</a>
+      <a href="" class="btn btn-primary tonbou">Supprimer</a>
     </form>
 
 <?php

@@ -10,7 +10,7 @@ include("template/header.php");
         <h3 class="card-title"></h3>
         <p class="card-text"></p>
         <p class="card-text"></p>
-        <a href="" class="btn btn-primary">Détails</a>
+        <a href="../views/detailsVue.php" class="btn btn-primary">Détails</a>
         <a href="" class="btn btn-primary tonbou">Créer</a>
         <a href="" class="btn btn-primary tonbou">Modifier</a>
         <a href="" class="btn btn-primary tonbou">Supprimer</a>
