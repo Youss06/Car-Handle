@@ -15,7 +15,7 @@ include("template/header.php");
         <p class="card-text"><?php echo $car->getYears(); ?></p>
         <a href="../controllers/detail.php?id=<?php echo $car->getId();?>" class="btn btn-primary">Détails</a>
 
-        <a href="" class="btn btn-primary tonbou">Modifier</a>
+        <a href="../controllers/form.php" class="btn btn-primary tonbou">Modifier</a>
         <a href="index.php?delete=<?php echo $value['id']; ?>" class="btn btn-primary tonbou">Supprimer</a>
       </div>
     </div>
