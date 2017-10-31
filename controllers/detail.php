@@ -11,6 +11,8 @@ spl_autoload_register("loadClass");
 // Foreach to Show detail page
 
 $VehiculeManager = new CarManager();
+
+
 if (isset($_GET['id'])) {
   # code...
   $id = $_GET['id'];
@@ -18,6 +20,9 @@ if (isset($_GET['id'])) {
   //transformer $datailVehicule [] -> object car_manager
   $car = new Car($detailVehicule);
 }
+
+
+
 
 
 //var_dump($car);

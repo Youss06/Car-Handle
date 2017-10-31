@@ -3,7 +3,7 @@
 include("template/header.php");
 
 ?>
-
+<a href="../views/formVue.php" class="btn btn-primary tonbou">Créer</a>
 <?php foreach ($ShowVehicule as $car) {
   ?>
 <div  class="col-lg-4">
@@ -14,9 +14,9 @@ include("template/header.php");
         <p class="card-text"><?php echo $car->getColor(); ?></p>
         <p class="card-text"><?php echo $car->getYears(); ?></p>
         <a href="../controllers/detail.php?id=<?php echo $car->getId();?>" class="btn btn-primary">Détails</a>
-        <a href="../views/formVue.php" class="btn btn-primary tonbou">Créer</a>
+
         <a href="" class="btn btn-primary tonbou">Modifier</a>
-        <a href="" class="btn btn-primary tonbou">Supprimer</a>
+        <a href="index.php?delete=<?php echo $value['id']; ?>" class="btn btn-primary tonbou">Supprimer</a>
       </div>
     </div>
   </div>

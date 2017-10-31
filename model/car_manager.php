@@ -38,4 +38,12 @@ class CarManager {
       return $data;
 }
 
+public function delete($id)
+      {
+        $q = $this->getBdd()->prepare('DELETE FROM vehicule WHERE vehicule.id = :id');
+        $q->bindValue(':id', $id, PDO::PARAM_INT);
+
+        $q->execute();
+      }
+
 }

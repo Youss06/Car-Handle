@@ -8,6 +8,7 @@ function loadClass($class) {
 spl_autoload_register("loadClass");
 
 $VehiculeManager = new CarManager();
+
 if ($_POST) {
   # code...
   $car = new Car(
@@ -16,6 +17,11 @@ if ($_POST) {
     'color' => $_POST['color'],
     'years' => $_POST['years']]);
     $VehiculeManager->add($car);
+}
+
+if(isset($_GET['delete'])){
+  $id = $_GET['delete'];
+  $donnees = $VehiculeManager->delete($id);
 }
 
 

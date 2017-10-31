@@ -11,7 +11,8 @@ include("template/header.php");
       </div> -->
 
       <input type="radio" name="model" value="camion"> Camion<br>
- <input type="radio" name="model" value="moto"> Moto<br>
+      <input type="radio" name="model" value="moto"> Moto<br>
+      <input type="radio" name="model" value="voiture"> Voiture<br>
 
       <div class="form-group">
         <label for="exampleInputEmail1">Couleur du véhicule</label>
