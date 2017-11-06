@@ -16,7 +16,7 @@ include("template/header.php");
 
       <div class="form-group">
         <label for="exampleInputEmail1">Couleur du véhicule</label>
-        <input type="text" class="form-control" name="color" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Bleu, Rouge, Vert...">
+        <input type="text" class="form-control" <?php echo "value='". $car->getColor() ."'" ?> name="color" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex: Bleu, Rouge, Vert...">
         <small id="emailHelp" class="form-text text-muted">La couleur de votre véhicule.</small>
       </div>
 
@@ -25,7 +25,7 @@ include("template/header.php");
       <form class="" action="" method="post" enctype="multipart/form-data">
         <div class="form-group">
           <label for="exampleInputEmail1">Marque du véhicule</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" name="mark" aria-describedby="emailHelp" placeholder="Inserez la marque de votre véhicule">
+          <input type="text" class="form-control" id="exampleInputEmail1"  name="mark" aria-describedby="emailHelp" placeholder="Inserez la marque de votre véhicule">
           <small id="emailHelp" class="form-text text-muted">Veuillez insérer la de votre véhicule.</small>
         </div>
 

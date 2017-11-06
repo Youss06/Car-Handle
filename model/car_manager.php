@@ -45,18 +45,19 @@ public function delete($id) {
         $q->execute();
       }
 
-public function update() {
+public function update($updateVehicule) {
   $q = $this->getBdd()->prepare('UPDATE vehicule
     SET model = :model, mark = :mark, color = :color, years = :years');
 
-     $q->bindValue(':model', $update->getModel());
-     $q->bindValue(':mark', $update->getMark(), PDO::PARAM_INT);
-     $q->bindValue(':color', $update->getColor(), PDO::PARAM_STR);
-     $q->bindValue(':years', $update->getYears(), PDO::PARAM_STR);
+     $q->bindValue(':model', $updateVehicule->getModel());
+     $q->bindValue(':mark', $updateVehicule->getMark(), PDO::PARAM_INT);
+     $q->bindValue(':color', $updateVehicule->getColor(), PDO::PARAM_STR);
+     $q->bindValue(':years', $updateVehicule->getYears(), PDO::PARAM_STR);
 
      $q->execute();
 
 
 }
+
 
 }
